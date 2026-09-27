@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Master Talent CR · PYMES y emprendimientos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Master Talent CR">
+      <span class="brand-mark">★</span><span>MASTER<br><small>TALENT CR</small></span>
+    </a>
+    <nav><a href="#categorias">Categorías</a><a href="#promociones">Promociones</a><a href="#soporte">Soporte</a></nav>
+    <div class="header-actions"><button class="btn btn-ghost" data-action="login">Iniciar sesión</button><button class="btn btn-primary" data-action="register">Registrarse</button><button class="cart" data-action="cart">🛒 <b id="cartCount">0</b></button></div>
+  </header>
+
+  <main id="inicio" class="shell">
+    <section class="hero">
+      <div class="hero-copy"><span class="eyebrow">LIBERIA · GUANACASTE</span><h1>Todo lo local,<br><em>en un solo lugar.</em></h1><p>Descubre PYMES y emprendimientos de comidas, servicios, arte y turismo.</p><div class="hero-actions"><button class="btn btn-primary btn-large" data-scroll="categorias">Explorar ahora <span>→</span></button><button class="btn btn-glass" data-action="business">Soy una PYME</button></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="person">●<span></span></div><div class="ribbon ribbon-one"></div><div class="ribbon ribbon-two"></div><div class="spark">★</div></div>
+    </section>
+
+    <section id="categorias" class="section"><div class="section-heading"><div><span class="eyebrow dark">DESCUBRE</span><h2>Explora por categoría</h2></div><button class="text-button" data-filter="all">Ver todo →</button></div><div class="category-grid"><button class="category active" data-filter="all"><span>✦</span><b>Todo</b><small>Ver opciones</small></button><button class="category" data-filter="comidas"><span>🍲</span><b>Comidas</b><small>Sabor local</small></button><button class="category" data-filter="servicios"><span>🛠</span><b>Servicios</b><small>Soluciones cerca</small></button><button class="category" data-filter="arte"><span>🎨</span><b>Arte</b><small>Creatividad local</small></button><button class="category" data-filter="turismo"><span>☼</span><b>Turismo</b><small>Vive Guanacaste</small></button></div></section>
+
+    <section id="promociones" class="promo-strip"><div><span class="eyebrow">OPORTUNIDADES LOCALES</span><h2>Haz que tu negocio brille.</h2><p>Conecta con nuevos clientes y haz crecer tu emprendimiento.</p></div><button class="btn btn-light" data-action="business">Publicar mi emprendimiento →</button></section>
+
+    <section class="section"><div class="section-heading"><div><span class="eyebrow dark">CERCA DE TI</span><h2>PYMES y emprendimientos destacados</h2></div><div class="search"><span>⌕</span><input id="search" placeholder="Buscar una PYME..." aria-label="Buscar una PYME"></div></div><div id="businessGrid" class="business-grid"></div><p id="empty" class="empty hidden">No encontramos resultados. Prueba otra búsqueda.</p></section>
+  </main>
+  <footer id="soporte"><span>© 2026 Master Talent CR</span><span>Apoyamos lo local · <a href="#soporte">Centro de soporte</a></span></footer>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body></html>
